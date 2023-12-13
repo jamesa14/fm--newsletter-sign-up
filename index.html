@@ -12,40 +12,42 @@
 </head>
 <body class="bg-charcoal-grey h-screen flex lg:items-center justify-center">
 
-  <div class="js-newsletter grid grid-cols-1 lg:grid-cols-12 items-center bg-white w-full max-w-[800px] lg:p-6 lg:rounded-3xl">
-    <div class="col-span-6 order-2 lg:order-1 py-0 lg:py-14 px-6 lg:ps-8 lg:pe-4">
-      <h2 class="text-4xl lg:text-5xl font-bold mb-6">Stay updated!</h2>
-      <p class="text-sm mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
-      <ul class="text-sm">
-        <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Product discovery and building what matters</li>
-        <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Measuring to ensure updates are a success</li>
-        <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />And much more!</li>
-      </ul>
-
-      <form class="mt-9">
-        <fieldset class="relative">
-          <label for="email" class="text-xs font-bold mb-2 block">Email Address</label>
-          <span class="message absolute top-0 right-0 text-xs font-bold text-tomato"></span>
-          <input type="text" id="email" name="email" class="w-full py-4 px-5 rounded-lg border text-sm" placeholder="email@company.com">
-        </fieldset>
-        <button type="submit" class="bg-dark-slate-grey hover:bg-tomato text-white mt-5 text-sm font-bold rounded-lg text-center w-full py-4 px-3">Subscribe to monthly newsletter</button>
-      </form>
+  <main role="main">
+    <div class="js-newsletter grid grid-cols-1 lg:grid-cols-12 items-center bg-white w-full max-w-[800px] lg:p-6 lg:rounded-3xl">
+      <div class="col-span-6 order-2 lg:order-1 py-0 lg:py-14 px-6 lg:ps-8 lg:pe-4">
+        <h1 class="text-4xl lg:text-5xl font-bold mb-6">Stay updated!</h1>
+        <p class="text-sm mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul class="text-sm">
+          <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Product discovery and building what matters</li>
+          <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Measuring to ensure updates are a success</li>
+          <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />And much more!</li>
+        </ul>
+  
+        <form class="mt-9">
+          <fieldset class="relative">
+            <label for="email" class="text-xs font-bold mb-2 block">Email Address</label>
+            <span class="message absolute top-0 right-0 text-xs font-bold text-tomato"></span>
+            <input type="text" id="email" name="email" class="w-full py-4 px-5 rounded-lg border text-sm" placeholder="email@company.com">
+          </fieldset>
+          <button type="submit" class="bg-dark-slate-grey hover:bg-tomato text-white mt-5 text-sm font-bold rounded-lg text-center w-full py-4 px-3">Subscribe to monthly newsletter</button>
+        </form>
+      </div>
+  
+      <div class="col-span-6 order-1 lg:order-2 lg:ms-10 min-h-[200px] bg-[url('images/illustration-sign-up-desktop.svg')] bg-cover bg-right h-full rounded-b-xl lg:rounded-xl">
+      </div>
     </div>
-
-    <div class="col-span-6 order-1 lg:order-2 lg:ms-10 min-h-[200px] bg-[url('images/illustration-sign-up-desktop.svg')] bg-cover bg-right h-full rounded-b-xl lg:rounded-xl">
+  
+    <div class="js-newsletter-success hidden bg-white w-full max-w-md p-12 rounded-3xl">
+      <img src="dist/images/icon-success.svg" alt="Success Icon" class="mb-8 w-14">
+  
+      <h2 class="text-5xl font-bold mb-7">Thanks for subscribing!</h2>
+  
+      <p class="text-sm mb-4">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+      Please open it and click the button inside to confirm your subscription.</p>
+  
+      <button class="js-close-success bg-dark-slate-grey hover:bg-tomato text-white mt-5 text-sm font-bold rounded-xl text-center w-full py-4 px-3">Dismiss message</button>
     </div>
-  </div>
-
-  <div class="js-newsletter-success hidden bg-white w-full max-w-md p-12 rounded-3xl">
-    <img src="dist/images/icon-success.svg" alt="Success Icon" class="mb-8 w-14">
-
-    <h2 class="text-5xl font-bold mb-7">Thanks for subscribing!</h2>
-
-    <p class="text-sm mb-4">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
-    Please open it and click the button inside to confirm your subscription.</p>
-
-    <button class="js-close-success bg-dark-slate-grey hover:bg-tomato text-white mt-5 text-sm font-bold rounded-xl text-center w-full py-4 px-3">Dismiss message</button>
-  </div>
+  </main>
 
   <script src="dist/script.js"></script>
 </body>
