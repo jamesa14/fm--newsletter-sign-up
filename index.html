@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="dist/output.css">
+</head>
+<body class="bg-charcoal-grey h-screen flex items-center justify-center">
+
+  <div class="js-newsletter grid grid-cols-2 items-center gap-10 bg-white w-full max-w-4xl p-6 rounded-3xl">
+    <div class="pl-8 pr-6">
+      <h2 class="text-5xl font-bold mb-6">Stay updated!</h2>
+      <p class="text-sm mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
+      <ul class="text-sm">
+        <li class="flex mb-3"><img src="assets/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Product discovery and building what matters</li>
+        <li class="flex mb-3"><img src="assets/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Measuring to ensure updates are a success</li>
+        <li class="flex mb-3"><img src="assets/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />And much more!</li>
+      </ul>
+
+      <form class="mt-9">
+        <fieldset class="relative">
+          <label for="email" class="text-xs font-bold mb-2 block">Email Address</label>
+          <span class="message absolute top-0 right-0 text-xs font-bold text-tomato"></span>
+          <input type="text" name="email" class="w-full py-4 px-5 rounded-lg border text-sm" placeholder="email@company.com">
+        </fieldset>
+        <button type="submit" class="bg-dark-slate-grey hover:bg-tomato text-white mt-5 text-sm font-bold rounded-lg text-center w-full py-4 px-3">Subscribe to monthly newsletter</button>
+      </form>
+    </div>
+
+    <div>
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+    </div>
+  </div>
+
+  <div class="js-newsletter-success hidden bg-white w-full max-w-md p-12 rounded-3xl">
+    <img src="assets/images/icon-success.svg" alt="Success Icon" class="mb-8 w-14">
+
+    <h2 class="text-5xl font-bold mb-7">Thanks for subscribing!</h2>
+
+    <p class="text-sm mb-4">A confirmation email has been sent to <strong>ash@loremcompany.com</strong>. 
+    Please open it and click the button inside to confirm your subscription.</p>
+
+    <button class="js-close-success bg-dark-slate-grey hover:bg-tomato text-white mt-5 text-sm font-bold rounded-xl text-center w-full py-4 px-3">Dismiss message</button>
+  </div>
+
+  <script type="text/javascript" src="dist/script.js"></script>
+</body>
+</html>
