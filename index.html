@@ -10,16 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="dist/output.css">
 </head>
-<body class="bg-charcoal-grey h-screen flex items-center justify-center">
+<body class="bg-charcoal-grey h-screen flex lg:items-center justify-center">
 
-  <div class="js-newsletter grid grid-cols-2 items-center gap-10 bg-white w-full max-w-4xl p-6 rounded-3xl">
-    <div class="pl-8 pr-6">
-      <h2 class="text-5xl font-bold mb-6">Stay updated!</h2>
+  <div class="js-newsletter grid grid-cols-1 lg:grid-cols-12 items-center bg-white w-full max-w-[800px] lg:p-6 lg:rounded-3xl">
+    <div class="col-span-6 order-2 lg:order-1 py-0 lg:py-14 px-6 lg:ps-8 lg:pe-4">
+      <h2 class="text-4xl lg:text-5xl font-bold mb-6">Stay updated!</h2>
       <p class="text-sm mb-6">Join 60,000+ product managers receiving monthly updates on:</p>
       <ul class="text-sm">
-        <li class="flex mb-3"><img src="assets/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Product discovery and building what matters</li>
-        <li class="flex mb-3"><img src="assets/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Measuring to ensure updates are a success</li>
-        <li class="flex mb-3"><img src="assets/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />And much more!</li>
+        <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Product discovery and building what matters</li>
+        <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />Measuring to ensure updates are a success</li>
+        <li class="flex mb-3"><img src="dist/images/icon-list.svg" alt="tick icon" class="w-5 me-3" />And much more!</li>
       </ul>
 
       <form class="mt-9">
@@ -32,13 +32,12 @@
       </form>
     </div>
 
-    <div>
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="">
+    <div class="col-span-6 order-1 lg:order-2 lg:ms-10 min-h-[200px] bg-[url('images/illustration-sign-up-desktop.svg')] bg-cover bg-right h-full rounded-b-xl lg:rounded-xl">
     </div>
   </div>
 
   <div class="js-newsletter-success hidden bg-white w-full max-w-md p-12 rounded-3xl">
-    <img src="assets/images/icon-success.svg" alt="Success Icon" class="mb-8 w-14">
+    <img src="dist/images/icon-success.svg" alt="Success Icon" class="mb-8 w-14">
 
     <h2 class="text-5xl font-bold mb-7">Thanks for subscribing!</h2>
 
